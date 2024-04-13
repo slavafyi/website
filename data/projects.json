@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Frontend development / API integrations",
+    "href": "https://selfmade.by",
+    "subtitle": "October 2021・Shopify, Liquid, Vanilla JS",
+    "title": "Selfmade Eyewear | Handmade designer sunglasses"
+  },
+  {
+    "description": "Frontend development / API integrations / Theme customization",
+    "href": "https://homage.tc",
+    "subtitle": "October 2021・Shopify, Liquid, Vanilla JS",
+    "title": "Homage | Timepiece fashion brand"
+  },
+  {
+    "description": "Frontend development / API integrations",
+    "href": "https://steadyfreddy.com",
+    "subtitle": "October 2021・Shopify, Liquid, OS2, Vanilla JS",
+    "title": "Steady Freddy | Effective sexual health solutions"
+  },
+  {
+    "description": "Generate import-map for Shopify theme",
+    "href": "https://github.com/slavamak/vite-plugin-shopify-import-maps",
+    "subtitle": "Typescript, Vite",
+    "title": "vite-plugin-shopify-import-maps"
+  }
+]

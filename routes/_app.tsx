@@ -1,4 +1,5 @@
 import { type PageProps } from "$fresh/server.ts";
+import site from "../data/site.json" with { type: "json" };
 
 export default function App({ Component }: PageProps) {
   return (
@@ -6,7 +7,7 @@ export default function App({ Component }: PageProps) {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Slava Maksimov | Software Developer</title>
+        <title>{site.title}</title>
         <link rel="stylesheet" href="/styles.css" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

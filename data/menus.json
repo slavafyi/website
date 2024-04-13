@@ -1,0 +1,52 @@
+{
+  "primary": [
+    {
+      "href": "/projects",
+      "title": "Projects",
+      "external": false
+    },
+    {
+      "href": "/blog",
+      "title": "Blog posts",
+      "external": false
+    }
+  ],
+  "secondary": [
+    {
+      "href": "/about",
+      "title": "About",
+      "external": false
+    },
+    {
+      "href": "mailto:hello@slavamak.com",
+      "title": "Email",
+      "external": true
+    }
+  ],
+  "contact": [
+    {
+      "href": "https://x.com/slavamak_com",
+      "title": "Twitter"
+    },
+    {
+      "href": "https://mastodon.social/@slavamak",
+      "title": "Mastodon"
+    },
+    {
+      "href": "https://t.me/slavamak_com",
+      "title": "Telegram"
+    },
+    {
+      "href": "https://github.com/slavamak",
+      "title": "GitHub"
+    },
+    {
+      "href": "https://www.upwork.com/freelancers/~019df0d142b971dff7",
+      "title": "Upwork"
+    },
+    {
+      "href": "https://www.linkedin.com/in/slavamak",
+      "title": "Linkedin"
+    }
+  ]
+}
