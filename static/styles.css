@@ -66,4 +66,34 @@
     font-weight: 700;
     src: url('/fonts/open-sans-v40-latin-700italic.woff2') format('woff2');
   }
+
+  :root {
+    --color-fg-default: 31 35 40;
+    --color-fg-muted: 99 108 118;
+    --color-fg-accent: 9 105 218;
+    --color-bg-default: 255 255 255;
+    --color-bg-muted: 246 248 250;
+    --color-border-default: 208 215 222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-fg-default: 230 237 243;
+      --color-fg-muted: 132 141 151;
+      --color-fg-accent: 68 147 248;
+      --color-bg-default: 13 17 23;
+      --color-bg-muted: 22 27 34;
+      --color-border-default: 48 54 61;
+    }
+  }
+
+
+  body {
+    @apply bg-bg text-fg;
+  }
+
+  a {
+    @apply underline-offset-2 decoration-1 transition;
+    @apply hover:underline hover:text-fg-accent;
+  }
 }

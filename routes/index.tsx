@@ -6,7 +6,7 @@ export default function Home() {
         <div>
           <span class="font-semibold">Software Developer</span>
           ・
-          <a href="https://github.com/slavamak" class="font-semibold">
+          <a href="https://github.com/slavamak" class="font-semibold text-fg-accent">
             @slavamak
           </a>
         </div>
