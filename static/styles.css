@@ -96,4 +96,8 @@
     @apply underline-offset-2 decoration-1 transition;
     @apply hover:underline hover:text-fg-accent;
   }
+
+  .prose a {
+    @apply underline text-fg-accent;
+  }
 }

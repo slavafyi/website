@@ -14,16 +14,60 @@ export default function About() {
 
       <section class="text-lg space-y-5">
         <p>
-          I work remotely as a solo contractor for Shopify ecosystem and
-          e-commerce for 4 years. Before that I spent nearly 6 years at state
-          organization as a system administrator.
+          I'm a seasoned remote contractor who's been helping small and
+          mid-sized companies thrive in the Shopify ecosystem for over 4 years.
+          Before going freelance, I spent nearly 6 years as a system
+          administrator for a state organization.
         </p>
-        <p>I typically work with small companies but I'm looking forward to join something big.</p>
-        <p>Outside of work, I'm an motorcyclist and programmer nerd.</p>
+        <p>
+          These days, you can find me working on building custom Shopify stores,
+          exploring modern web technologies like Node.js and Deno.
+        </p>
+        <p>Outside of my work, I'm also an avid motorcyclist.</p>
+      </section>
+
+      <section class="prose space-y-8">
+        <h2 class="text-2xl font-bold">Interests</h2>
+
+        <ul class="text-lg space-y-3 list-disc list-inside">
+          <li>
+            Tinkering with Neovim and the terminal
+          </li>
+          <li>
+            Constantly expanding my skills in{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Computer_science"
+              title="Computer science"
+              target="_blank"
+            >
+              CS
+            </a>{" "}
+            and backend
+          </li>
+          <li>
+            Open-source and self-hosted solutions
+          </li>
+          <li>
+            Securing my{"  "}
+            <a
+              href="https://digital-defense.io"
+              title="Digital Defence"
+              target="_blank"
+            >
+              digital
+            </a>{" "}
+            life and protecting my privacy
+          </li>
+          <li>
+            Finding one's place in life
+          </li>
+        </ul>
       </section>
 
       {menus.contact?.length > 0 && (
-        <section>
+        <section class="space-y-8">
+          <h2 class="text-2xl font-bold">You can find me here</h2>
+
           <ul class="flex flex-col gap-y-5 text-xl text-fg-muted">
             {menus.contact.map((item) => (
               <li>
