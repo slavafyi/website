@@ -1,21 +1,39 @@
 import { Head } from "$fresh/runtime.ts";
+import { type RouteConfig } from "$fresh/server.ts";
 
-export default function NotFound() {
+export const config: RouteConfig = {
+  skipInheritedLayouts: true,
+};
+
+export function ServerCodePage(
+  props: { serverCode: number; codeDescription: string },
+) {
   return (
     <>
       <Head>
-        <title>404 - Page not found</title>
+        <title>{props.serverCode}</title>
       </Head>
 
-      <section>
-        <h1 class="text-32 font-bold">404 - Page not found</h1>
+      <main class="w-full h-screen flex items-center justify-center text-center">
+        <section class="flex flex-col">
+          <h1 class="text-[8rem] leading-none font-bold">
+            {props.serverCode}
+          </h1>
 
-        <p class="my-4">
-          The page you were looking for doesn't exist.
-        </p>
+          <p class="text-xl font-medium mt-2 mb-8">
+            {props.codeDescription}
+          </p>
 
-        <a href="/" class="underline">Go back home</a>
-      </section>
+          <a href="/" class="text-xl font-medium">Back to the Homepage</a>
+        </section>
+      </main>
     </>
   );
+}
+
+export default function PageNotFound() {
+  return ServerCodePage({
+    serverCode: 404,
+    codeDescription: "Couldn’t find what you’re looking for.",
+  });
 }

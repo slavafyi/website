@@ -4,7 +4,7 @@ export default function Home() {
       <section>
         <h1 class="text-32 font-bold">Slava Maksimov</h1>
         <div>
-          <span class="font-semibold">Software Developer</span>
+          <span class="font-semibold text-fg-muted">Software Developer</span>
           ・
           <a href="https://github.com/slavamak" class="font-semibold text-fg-accent">
             @slavamak
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       <section>
-        <ul class="flex flex-col gap-y-5 text-xl">
+        <ul class="flex flex-col gap-y-5 text-xl text-fg-muted">
           <li>
             <a href="/about">About</a>
           </li>
