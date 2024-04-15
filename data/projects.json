@@ -1,26 +1,32 @@
-[
-  {
-    "description": "Frontend development / API integrations",
-    "href": "https://selfmade.by",
-    "subtitle": "October 2021・Shopify, Liquid, Vanilla JS",
-    "title": "Selfmade Eyewear | Handmade designer sunglasses"
-  },
-  {
-    "description": "Frontend development / API integrations / Theme customization",
-    "href": "https://homage.tc",
-    "subtitle": "October 2021・Shopify, Liquid, Vanilla JS",
-    "title": "Homage | Timepiece fashion brand"
-  },
-  {
-    "description": "Frontend development / API integrations",
-    "href": "https://steadyfreddy.com",
-    "subtitle": "October 2021・Shopify, Liquid, OS2, Vanilla JS",
-    "title": "Steady Freddy | Effective sexual health solutions"
-  },
-  {
-    "description": "Generate import-map for Shopify theme",
-    "href": "https://github.com/slavamak/vite-plugin-shopify-import-maps",
-    "subtitle": "Typescript, Vite",
-    "title": "vite-plugin-shopify-import-maps"
-  }
-]
+{
+  "selected": [
+    {
+      "description": "Frontend development / API integrations",
+      "href": "https://selfmade.by",
+      "meta": "Shopify・Liquid・Vanilla JS",
+      "subtitle": "December 2020",
+      "title": "Selfmade Eyewear"
+    },
+    {
+      "description": "Frontend development / API integrations / Theme customization",
+      "href": "https://homage.tc",
+      "meta": "Shopify・Liquid・Vanilla JS",
+      "subtitle": "June 2021",
+      "title": "Homage"
+    },
+    {
+      "description": "Frontend development / API integrations",
+      "href": "https://steadyfreddy.com",
+      "meta": "Shopify・Liquid・OS2・Vanilla JS",
+      "subtitle": "October 2021",
+      "title": "Steady Freddy"
+    }
+  ],
+  "open_source": [
+    {
+      "description": "Generate import-map for Shopify theme",
+      "href": "https://github.com/slavamak/vite-plugin-shopify-import-maps",
+      "title": "vite-plugin-shopify-import-maps"
+    }
+  ]
+}
