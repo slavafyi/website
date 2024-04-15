@@ -20,7 +20,7 @@ export default function About() {
           <h2 class="text-2xl font-bold">Selected work</h2>
 
           <ul class="flex flex-col gap-y-5">
-            {projects.selected.reverse().map((item) => (
+            {Array.from(projects.selected).reverse().map((item) => (
               <li class="space-y-1">
                 <div class="text-fg-muted">{item.subtitle}</div>
                 <a href={item.href} target="_blank" class="text-xl">
@@ -39,7 +39,7 @@ export default function About() {
           <h2 class="text-2xl font-bold">Open-source</h2>
 
           <ul class="flex flex-col gap-y-5">
-            {projects.open_source.reverse().map((item) => (
+            {Array.from(projects.open_source).reverse().map((item) => (
               <li class="space-y-1">
                 <a href={item.href} target="_blank" class="text-xl">
                   {item.title}
