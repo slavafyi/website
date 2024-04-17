@@ -1,0 +1,32 @@
+[
+  {
+    "destination": "https://bsky.app/profile/slavamak.bsky.social",
+    "source": "/bsky",
+    "status": 302
+  },
+  {
+    "destination": "https://open.spotify.com/user/m7jyoho3uovlqxt4tz0ymn6mk",
+    "source": "/spotify",
+    "status": 302
+  },
+  {
+    "destination": "https://www.upwork.com/freelancers/~019df0d142b971dff7",
+    "source": "/upwork",
+    "status": 302
+  },
+  {
+    "destination": "https://slavamak.notion.site/Homage-d06a7084867344bb8274c5c0d9e1c648",
+    "source": "/docs/homage",
+    "status": 302
+  },
+  {
+    "destination": "https://slavamak.notion.site/Steady-Freddy-9af02a49f8e24e1dafb0a1397f7a127f",
+    "source": "/docs/steadyfreddy",
+    "status": 302
+  },
+  {
+    "destination": "https://m.do.co/c/bd676bd2bc60",
+    "source": "/do",
+    "status": 302
+  }
+]
