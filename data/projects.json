@@ -1,24 +1,27 @@
 {
   "selected": [
     {
-      "description": "Frontend development / API integrations",
+      "description": "Theme from scratch development / API integrations",
       "href": "https://selfmade.by",
-      "meta": "Shopify・Liquid・Vanilla JS",
-      "subtitle": "December 2020",
+      "release_date": "December 2020",
+      "stack": "Shopify・Liquid・Vanilla JS",
+      "subtitle": "Handmade designer sunglasses",
       "title": "Selfmade Eyewear"
     },
     {
-      "description": "Frontend development / API integrations / Theme customization",
+      "description": "Theme customization / API integrations",
       "href": "https://homage.tc",
-      "meta": "Shopify・Liquid・Vanilla JS",
-      "subtitle": "June 2021",
+      "release_date": "June 2021",
+      "stack": "Shopify・Liquid・Vanilla JS",
+      "subtitle": "Timepiece fashion brand",
       "title": "Homage"
     },
     {
-      "description": "Frontend development / API integrations",
+      "description": "Theme from scratch development / API integrations",
       "href": "https://steadyfreddy.com",
-      "meta": "Shopify・Liquid・OS2・Vanilla JS",
-      "subtitle": "October 2021",
+      "release_date": "October 2021",
+      "stack": "Shopify・Liquid・OS2・Vanilla JS",
+      "subtitle": "Effective sexual health solutions",
       "title": "Steady Freddy"
     }
   ],

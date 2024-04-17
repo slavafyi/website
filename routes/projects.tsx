@@ -22,12 +22,12 @@ export default function About() {
           <ul class="flex flex-col gap-y-5">
             {Array.from(projects.selected).reverse().map((item) => (
               <li class="space-y-1">
-                <div class="text-fg-muted">{item.subtitle}</div>
-                <a href={item.href} target="_blank" class="text-xl">
+                <div class="text-fg-muted">{item.release_date}</div>
+                <a href={item.href} target="_blank" class="text-xl" title={item.subtitle}>
                   {item.title}
                 </a>
                 <div class="text-fg-muted">{item.description}</div>
-                <div class="text-sm text-fg-muted">{item.meta}</div>
+                <div class="text-sm text-fg-muted">{item.stack}</div>
               </li>
             ))}
           </ul>
