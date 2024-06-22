@@ -23,7 +23,12 @@ export default function About() {
             {Array.from(projects.selected).reverse().map((item) => (
               <li class="space-y-1">
                 <div class="text-fg-muted">{item.release_date}</div>
-                <a href={item.href} target="_blank" class="text-xl" title={item.subtitle}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  class="text-xl"
+                  title={item.subtitle}
+                >
                   {item.title}
                 </a>
                 <div class="text-fg-muted">{item.description}</div>

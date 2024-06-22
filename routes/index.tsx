@@ -28,7 +28,10 @@ export default function Home() {
           <ul class="flex flex-col gap-y-5 text-xl font-medium">
             {menus.primary.map((item) => (
               <li>
-                <a href={item.href} target={item.external ? "_blank" : undefined}>
+                <a
+                  href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                >
                   {item.title}
                 </a>
               </li>
@@ -42,7 +45,10 @@ export default function Home() {
           <ul class="flex flex-col gap-y-5 text-xl text-fg-muted">
             {menus.secondary.map((item) => (
               <li>
-                <a href={item.href} target={item.external ? "_blank" : undefined}>
+                <a
+                  href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                >
                   {item.title}
                 </a>
               </li>
