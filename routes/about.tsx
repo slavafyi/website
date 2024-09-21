@@ -15,15 +15,16 @@ export default function About() {
       <section class="text-lg space-y-5">
         <p>
           I'm a seasoned remote contractor who's been helping small and
-          mid-sized companies thrive in the Shopify ecosystem for over 4 years.
+          mid-sized companies thrive in the Shopify ecosystem for over 5 years.
           Before going freelance, I spent nearly 6 years as a system
           administrator for a state organization.
         </p>
         <p>
-          These days, you can find me working on building custom Shopify stores,
-          exploring modern web technologies like Node.js and Deno.
+          These days, you can find me working on building custom Shopify stores
+          using modern web technologies. I'm also interested in learning Node.js
+          and using Medusa for headless commerce projects.
         </p>
-        <p>Outside of my work, I'm also an avid motorcyclist.</p>
+        <p>Outside of my work, I'm an avid motorcyclist.</p>
       </section>
 
       <section class="prose space-y-8">
@@ -31,7 +32,7 @@ export default function About() {
 
         <ul class="text-lg space-y-3 list-disc list-inside">
           <li>
-            Tinkering with Neovim and the terminal
+            Tinkering with Neovim and the terminal.
           </li>
           <li>
             Constantly expanding my skills in{" "}
@@ -40,26 +41,22 @@ export default function About() {
               title="Computer science"
               target="_blank"
             >
-              CS
-            </a>{" "}
-            and backend
+              Computer science
+            </a>.
           </li>
           <li>
-            Open-source and self-hosted solutions
+            Open-source and self-hosted solutions.
           </li>
           <li>
             Securing my{"  "}
             <a
               href="https://digital-defense.io"
-              title="Digital Defence"
+              title="Digital Defense"
               target="_blank"
             >
               digital
             </a>{" "}
-            life and protecting my privacy
-          </li>
-          <li>
-            Finding one's place in life
+            life and protecting my privacy.
           </li>
         </ul>
       </section>

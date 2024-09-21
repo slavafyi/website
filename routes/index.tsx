@@ -11,8 +11,8 @@ export default function Home() {
 
       <section>
         <h1 class="text-32 font-bold">Slava Maksimov</h1>
-        <div>
-          <span class="font-semibold text-fg-muted">Software Engineer</span>
+        <div class="text-fg-muted">
+          <span class="font-semibold">Software Developer</span>
           ・
           <a
             href="https://github.com/slavamak"
