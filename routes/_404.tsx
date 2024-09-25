@@ -20,11 +20,11 @@ export function ServerCodePage(
             {props.serverCode}
           </h1>
 
-          <p class="text-xl font-medium mt-2 mb-8">
+          <p class="text-xl mt-2 mb-8">
             {props.codeDescription}
           </p>
 
-          <a href="/" class="text-xl font-medium">Back to the Homepage</a>
+          <a href="/" class="text-xl font-bold">Back to the Homepage</a>
         </section>
       </main>
     </>

@@ -12,11 +12,11 @@ export default function Home() {
       <section>
         <h1 class="text-32 font-bold">Slava Maksimov</h1>
         <div class="text-fg-muted">
-          <span class="font-semibold">Software Developer</span>
+          <span class="font-bold">Software Developer</span>
           ・
           <a
             href="https://github.com/slavamak"
-            class="font-semibold text-fg-accent"
+            class="font-bold text-fg-accent"
           >
             @slavamak
           </a>
@@ -25,7 +25,7 @@ export default function Home() {
 
       {menus.primary?.length > 0 && (
         <section>
-          <ul class="flex flex-col gap-y-5 text-xl font-medium">
+          <ul class="flex flex-col gap-y-5 text-xl">
             {menus.primary.map((item) => (
               <li>
                 <a

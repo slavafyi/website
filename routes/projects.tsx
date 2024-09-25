@@ -10,7 +10,7 @@ export default function About() {
 
       <section>
         <h1 class="text-32 font-bold">Projects</h1>
-        <div class="font-semibold text-fg-muted">
+        <div class="font-bold text-fg-muted">
           Open-source, personal and commissioned projects
         </div>
       </section>

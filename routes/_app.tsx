@@ -28,34 +28,6 @@ export default function App({ Component }: PageProps) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link
-          rel="preload"
-          href={asset("/fonts/open-sans-v40-latin-regular.woff2")}
-          as="font"
-          type="font/woff2"
-          crossOrigin="true"
-        />
-        <link
-          rel="preload"
-          href={asset("/fonts/open-sans-v40-latin-500.woff2")}
-          as="font"
-          type="font/woff2"
-          crossOrigin="true"
-        />
-        <link
-          rel="preload"
-          href={asset("/fonts/open-sans-v40-latin-600.woff2")}
-          as="font"
-          type="font/woff2"
-          crossOrigin="true"
-        />
-        <link
-          rel="preload"
-          href={asset("/fonts/open-sans-v40-latin-700.woff2")}
-          as="font"
-          type="font/woff2"
-          crossOrigin="true"
-        />
       </head>
 
       <body>
