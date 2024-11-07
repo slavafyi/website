@@ -28,5 +28,20 @@
     "destination": "https://m.do.co/c/bd676bd2bc60",
     "source": "/do",
     "status": 302
+  },
+  {
+    "destination": "https://mastodon.social/.well-known/host-meta?resource=acct:slavamak@mastodon.social",
+    "source": "/.well-known/host-meta",
+    "status": 301
+  },
+  {
+    "destination": "https://mastodon.social/.well-known/webfinger?resource=acct:slavamak@mastodon.social",
+    "source": "/.well-known/webfinger",
+    "status": 301
+  },
+  {
+    "destination": "https://mastodon.social/.well-known/nodeinfo?resource=acct:slavamak@mastodon.social",
+    "source": "/.well-known/nodeinfo",
+    "status": 301
   }
 ]
