@@ -28,6 +28,7 @@ export default function App({ Component }: PageProps) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+        <link rel="me" href="https://mastodon.social/@slavamak" />
       </head>
 
       <body>
