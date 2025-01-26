@@ -30,17 +30,17 @@
     "status": 302
   },
   {
-    "destination": "https://mastodon.social/.well-known/host-meta?resource=acct:slavamak@mastodon.social",
+    "destination": "https://mastodon.social/.well-known/host-meta?resource=acct:slavafyi@mastodon.social",
     "source": "/.well-known/host-meta",
     "status": 301
   },
   {
-    "destination": "https://mastodon.social/.well-known/webfinger?resource=acct:slavamak@mastodon.social",
+    "destination": "https://mastodon.social/.well-known/webfinger?resource=acct:slavafyi@mastodon.social",
     "source": "/.well-known/webfinger",
     "status": 301
   },
   {
-    "destination": "https://mastodon.social/.well-known/nodeinfo?resource=acct:slavamak@mastodon.social",
+    "destination": "https://mastodon.social/.well-known/nodeinfo?resource=acct:slavafyi@mastodon.social",
     "source": "/.well-known/nodeinfo",
     "status": 301
   }
