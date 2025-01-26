@@ -28,7 +28,7 @@ export default function App({ Component }: PageProps) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="me" href="https://mastodon.social/@slavamak" />
+        <link rel="me" href="https://mastodon.social/@slavafyi" />
         <link
           rel="preload"
           href={asset("/fonts/open-sans-v40-latin-regular.woff2")}
