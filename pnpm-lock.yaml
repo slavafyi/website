@@ -17,9 +17,6 @@ importers:
       '@astrojs/sitemap':
         specifier: ^3.3.0
         version: 3.3.0
-      '@deno/astro-adapter':
-        specifier: ^0.3.0
-        version: 0.3.0(astro@5.5.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.2)(yaml@2.7.1))
       '@tailwindcss/vite':
         specifier: ^4.0.17
         version: 4.0.17(vite@6.2.3(jiti@2.4.2)(lightningcss@1.29.2)(yaml@2.7.1))
@@ -77,15 +74,6 @@ packages:
   '@babel/types@7.27.0':
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
-
-  '@deno/astro-adapter@0.3.0':
-    resolution: {integrity: sha512-HlN0k8XALGbzWCm58OPJBHWWpJUVXrAZRbEL/VUmZpVTl23+k3qlx7Pjdk1NcVNu1hKVl/6WTdwh9GUzd02Lpg==}
-    peerDependencies:
-      '@opentelemetry/api': ^1
-      astro: ^5.0.1
-    peerDependenciesMeta:
-      '@opentelemetry/api':
-        optional: true
 
   '@emnapi/runtime@1.4.0':
     resolution: {integrity: sha512-64WYIf4UYcdLnbKn/umDlNjQDSS8AgZrI/R9+x5ilkUVFxXcA1Ebl+gQLc/6mERA4407Xof0R7wEyEuj091CVw==}
@@ -1823,10 +1811,6 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
-
-  '@deno/astro-adapter@0.3.0(astro@5.5.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.2)(yaml@2.7.1))':
-    dependencies:
-      astro: 5.5.5(jiti@2.4.2)(lightningcss@1.29.2)(rollup@4.38.0)(typescript@5.8.2)(yaml@2.7.1)
 
   '@emnapi/runtime@1.4.0':
     dependencies:

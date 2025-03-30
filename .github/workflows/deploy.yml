@@ -27,6 +27,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: slavafyi-website
+          project: slavafyi
           entrypoint: jsr:@std/http/file-server
-          root: dist/client
+          root: dist
