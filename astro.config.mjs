@@ -19,6 +19,6 @@ export default defineConfig({
     }
     return acc
   }, {}),
-  output: 'server',
+  output: 'static',
   adapter: deno(),
 })

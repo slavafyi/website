@@ -29,4 +29,4 @@ jobs:
         with:
           project: slavafyi-website
           entrypoint: jsr:@std/http/file-server
-          root: dist
+          root: dist/client
