@@ -1,0 +1,7 @@
+**/*.js
+**/*.mjs
+**/*.ts
+**/*.mts
+**/*.css
+deno.lock
+pnpm-lock.yaml
