@@ -1,6 +1,6 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import Layout from '../layouts/Base.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Layout from "../layouts/Base.astro";
 import menus from "../../data/menus.json";
 ---
 
@@ -19,37 +19,35 @@ import menus from "../../data/menus.json";
     </div>
   </section>
 
-  {menus.primary?.length > 0 && (
-    <section>
-      <ul class="flex flex-col gap-y-5 text-xl font-medium">
-        {menus.primary.map((item) => (
-          <li>
-            <a
-              href={item.href}
-              target={item.external ? "_blank" : undefined}
-            >
-              {item.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+  {
+    menus.primary?.length > 0 && (
+      <section>
+        <ul class="flex flex-col gap-y-5 text-xl font-medium">
+          {menus.primary.map((item) => (
+            <li>
+              <a href={item.href} target={item.external ? "_blank" : undefined}>
+                {item.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 
-  {menus.secondary?.length > 0 && (
-    <section>
-      <ul class="flex flex-col gap-y-5 text-xl text-fg-muted">
-        {menus.secondary.map((item) => (
-          <li>
-            <a
-              href={item.href}
-              target={item.external ? "_blank" : undefined}
-            >
-              {item.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+  {
+    menus.secondary?.length > 0 && (
+      <section>
+        <ul class="flex flex-col gap-y-5 text-xl text-fg-muted">
+          {menus.secondary.map((item) => (
+            <li>
+              <a href={item.href} target={item.external ? "_blank" : undefined}>
+                {item.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 </Layout>

@@ -1,5 +1,5 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
+import BaseHead from "../components/BaseHead.astro";
 
 interface Props {
   error: unknown;
@@ -9,16 +9,14 @@ const { error } = Astro.props;
 ---
 
 <html lang="en">
-	<head>
-		<BaseHead title="Oops! Something went wrong." />
-	</head>
+  <head>
+    <BaseHead title="Oops! Something went wrong." />
+  </head>
 
-	<body>
+  <body>
     <main class="w-full h-screen flex items-center justify-center text-center">
       <section class="flex flex-col">
-        <h1 class="text-[8rem] leading-none font-bold">
-          500
-        </h1>
+        <h1 class="text-[8rem] leading-none font-bold">500</h1>
 
         <p class="text-xl font-medium mt-2 mb-8">
           {error instanceof Error ? error.message : "Unknown error"}
@@ -27,5 +25,5 @@ const { error } = Astro.props;
         <a href="/" class="text-xl font-medium">Back to the Homepage</a>
       </section>
     </main>
-	</body>
+  </body>
 </html>
