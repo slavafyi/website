@@ -21,5 +21,5 @@ export default defineConfig({
   }, {}),
   output: 'static',
   adapter: deno(),
-  trailingSlash: false
+  trailingSlash: 'never'
 })
