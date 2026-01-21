@@ -1,10 +1,10 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Layout from "../layouts/Base.astro";
 import menus from "../../data/menus.json";
+import { description } from "../../data/site.json";
 ---
 
-<Layout title="About | Slava Maksimov">
+<Layout title="About | Slava Maksimov" description={description}>
   <section>
     <h1 class="text-32 font-bold">About</h1>
   </section>
