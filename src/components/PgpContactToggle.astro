@@ -1,0 +1,99 @@
+---
+const fingerprint = "3A43 D1F0 B29F AC4D 5729 8574 4C02 2197 C7F9 25E6";
+const keyUrl =
+  "https://mail-api.proton.me/pks/lookup?op=get&search=hi@slava.fyi";
+---
+
+<pgp-contact-toggle class="block">
+  <button
+    type="button"
+    class="cursor-pointer underline-offset-2 hover:underline hover:text-fg-accent"
+    data-pgp-toggle
+    aria-expanded="false"
+    aria-controls="pgp-card"
+  >
+    Public key
+  </button>
+
+  <div
+    id="pgp-card"
+    class="mt-3 hidden space-y-2 rounded-lg border border-border bg-bg-muted p-4 text-sm"
+    data-pgp-panel
+  >
+    <p class="text-fg-muted">Use this key to encrypt email before sending.</p>
+
+    <p class="text-fg">Fingerprint:</p>
+
+    <pre
+      class="overflow-x-auto rounded border border-border bg-bg px-3 py-2 font-mono text-xs leading-relaxed whitespace-pre-wrap"
+      >{fingerprint}</pre
+    >
+
+    <p class="text-fg">Public key URL:</p>
+
+    <a
+      class="block break-all font-mono text-xs text-fg-accent underline-offset-2 hover:underline"
+      href={keyUrl}
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+    >
+      {keyUrl}
+    </a>
+  </div>
+</pgp-contact-toggle>
+
+<script>
+  class PgpContactToggle extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.bound === "true") {
+        return;
+      }
+
+      const toggleButton = this.querySelector("[data-pgp-toggle]");
+      const panel = this.querySelector("[data-pgp-panel]");
+
+      if (!toggleButton || !panel) {
+        return;
+      }
+
+      this.dataset.bound = "true";
+      this.toggleButton = toggleButton;
+      this.panel = panel;
+
+      this.onToggleClick = () => {
+        const willOpen = this.panel.classList.contains("hidden");
+        this.setPanelOpen(willOpen);
+      };
+
+      this.onEscapeKey = (event) => {
+        if (event.key !== "Escape") return;
+        if (this.panel.classList.contains("hidden")) return;
+
+        this.setPanelOpen(false);
+        this.toggleButton.focus();
+      };
+
+      this.toggleButton.addEventListener("click", this.onToggleClick);
+      document.addEventListener("keydown", this.onEscapeKey);
+    }
+
+    disconnectedCallback() {
+      if (this.toggleButton && this.onToggleClick) {
+        this.toggleButton.removeEventListener("click", this.onToggleClick);
+      }
+
+      if (this.onEscapeKey) {
+        document.removeEventListener("keydown", this.onEscapeKey);
+      }
+    }
+
+    setPanelOpen(open) {
+      this.panel.classList.toggle("hidden", !open);
+      this.toggleButton.setAttribute("aria-expanded", String(open));
+    }
+  }
+
+  if (!customElements.get("pgp-contact-toggle")) {
+    customElements.define("pgp-contact-toggle", PgpContactToggle);
+  }
+</script>

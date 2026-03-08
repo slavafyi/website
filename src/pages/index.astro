@@ -2,6 +2,7 @@
 import { description, title } from "../../data/site.json";
 import Layout from "../layouts/Base.astro";
 import menus from "../../data/menus.json";
+import PgpContactToggle from "../components/PgpContactToggle.astro";
 ---
 
 <Layout title={title} description={description}>
@@ -46,6 +47,9 @@ import menus from "../../data/menus.json";
               </a>
             </li>
           ))}
+          <li>
+            <PgpContactToggle />
+          </li>
         </ul>
       </section>
     )
